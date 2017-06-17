@@ -28,11 +28,4 @@ public class IntersectingAlgorithm {
             return false;
         return true;
     }
-
-    private boolean isIntersect(Rectangle r1, Rectangle r2){
-        if(r1.getMinX() > r2.getMaxX() || r1.getMaxX() < r2.getMinX()
-                || r1.getMaxY() < r2.getMinY() || r1.getMinY() > r2.getMaxY())
-            return false;
-        return true;
-    }
 }
