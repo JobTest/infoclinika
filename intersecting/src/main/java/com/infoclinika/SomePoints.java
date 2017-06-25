@@ -1,38 +1,38 @@
 package com.infoclinika;
 
-
 import java.awt.*;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.Set;
 import java.util.TreeSet;
 
-public class SomeRectangles {
 
-    private Set<Rectangle> rectangles;
+public class SomePoints {
 
-    public SomeRectangles(){
-        rectangles = new TreeSet(new Comparator<Rectangle>() {
+    private Set<Rectangle> points;
+
+    public SomePoints(){
+        points = new TreeSet(new Comparator<Rectangle>() {
             @Override
             public int compare(Rectangle o1, Rectangle o2) {
                 return (isIntersect(o1, o2) ? 0 : 1);
             }
         });
 
-        add(0, 0, 7, 5);
-        add(6, 6, 5, 5);
+        add(0, 0);
+        add(5, 5);
+        add(6, 6);
         //TODO...
     }
 
-    private boolean add(int x, int y, int width, int height) {
+    private boolean add(int x, int y) {
         Rectangle rectangle = new Rectangle();
-        rectangle.setBounds(x, y, width, height);
+        rectangle.setBounds(x, y, 0, 0);
 
-        return rectangles.add(rectangle);
+        return points.add(rectangle);
     }
 
-    public Set<Rectangle> getRectangles() {
-        return rectangles;
+    public Set<Rectangle> getPoints() {
+        return points;
     }
 
     private boolean isIntersect(Rectangle r1, Rectangle r2){
@@ -41,5 +41,4 @@ public class SomeRectangles {
             return false;
         return true;
     }
-
 }

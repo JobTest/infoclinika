@@ -28,7 +28,7 @@ Assumptions:
 5. Координата может не соответствовать любому прямоугольнику.
 6. Коллекция прямоугольников каким-то образом заполняется в классе. Это статично и окончательно. Нет необходимости писать сеттеры и геттеры или любое управление прямоугольниками.
 
-
+* [Sort an Object with Comparable](https://www.mkyong.com/java/java-object-sorting-example-comparable-and-comparator/) **(** [Java 8 Lambda : Comparator](https://www.mkyong.com/java8/java-8-lambda-comparator-example) **)**
 
 
 
